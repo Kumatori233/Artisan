@@ -1,4 +1,4 @@
-﻿using Artisan.Autocraft;
+using Artisan.Autocraft;
 using Artisan.CraftingLists;
 using Artisan.FCWorkshops;
 using Artisan.RawInformation;
@@ -87,12 +87,6 @@ namespace Artisan.UI
 
         public override void Draw()
         {
-            if (DalamudInfo.IsOnStaging())
-            {
-                ImGui.Text($"Artisan is not designed to work on non-release versions of Dalamud. Please type /xlbranch, click 'release' and then 'Pick & Restart'.");
-                return;
-            }
-
             var region = ImGui.GetContentRegionAvail();
             var itemSpacing = ImGui.GetStyle().ItemSpacing;
 
